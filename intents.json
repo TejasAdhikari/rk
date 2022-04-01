@@ -1,229 +1,119 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"],
-         "context": [""]
-        },
-        {"tag": "noanswer",
-         "patterns": [],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
-         "context": [""]
-        },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
-         "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"],
-         "context": [""]
-        },
-        {"tag": "order_tracking",
-             "patterns": ["where is order with id 431B67?", "track order 562B78", "Where is my order with id 561A24?" ],
-         "responses": ["Delayed","Dispatched","On the Way!"],
-         "context": [""]
-        },
-        {"tag": "order_components",
-         "patterns": ["order id 345A23 comprises of?","List of components"],
-         "responses": ["order comprises of hardisk and bluetooth"],
-         "context": [""]
-        },
-       {"tag": "missing_id",
-         "patterns": ["where is the order","where is my order","locate the order","Delivery date of order"],
-         "responses": ["Please enter with order ID"],
-         "context": [""]
-        },
-    {"tag": "Location",
-         "patterns": ["find order location 32712","What is the Location of order 23A31?"],
-         "responses": ["It is in germany","It is in Berlin","It has reached china","It has reached Banglore"],
-         "context": [""]
-        },
-        {"tag": "search_person_by_id",
-         "patterns": ["I want an appoitment with Manoj kumar","set an appointment with Sujata Nandi"],
-         "responses": ["Fixing an appointment."],
-         "context": [""]
-        },
-        {"tag": "appointment status",
-         "patterns": ["Is my appointment fixed?","Do I have an appointment today?"],
-         "responses": ["Yes","NO! Not Yet"],
-         "context": [""]
-        },
-        {"tag": "check_leave",
-         "patterns": ["Is Sujata Nandi on leave?","Is Manish Kumar on leave?"],
-         "responses": ["No Not On Leave","Yes On Leave"],
-         "context": [""]
-        },
-         {"tag": "cost_lowering",
-         "patterns": ["Cost Lowering changes to be made?","what changes could lower cost?"],
-         "responses": ["Increase Transportation capacity utilisation,Increase supply chain velocity,Reduce order variability"],
-         "context": [""]
-        },
-         {"tag": "forgot_password",
-         "patterns": ["I forgot my Login password?","what to do when someone forgets Login password?","I forgot my Laptop password","Forgot Wifi password"],
-         "responses": ["Please enter your email id ,we will send a link on your email"],
-          "context": [""]
-        },
-          {"tag": "email_id",
-          "patterns":["abx@gmail.com","abc@kiit.ac.in"],
-          "responses":["Link has been shared.Please change your password"],
-           "context": [""]
-        },
-        {"tag": "manufacturing_problems",
-         "patterns": ["Find me a manufacturer nearby"],
-         "responses": ["The nearest manufacturer is Vietnam"],
-         "context": [""]
-        },
-        {"tag": "search_department",
-         "patterns": ["I want to know the various departments in this company"],
-         "responses": ["The department are:Projects,IT,Production,OutSource"],
-         "context": [""]
-        },
-        {"tag": "competitors_in_market",
-         "patterns": ["what are challenging events", "what are the threats in the market"],
-         "responses": ["Recent news of Demonetisation & recession"],
-         "context": [""]
-        },
-       {"tag": "key_customers",
-         "patterns": ["Our Target customers", "who are your key customers"],
-         "responses": ["Our target customers are in the range of age 20-40"],
-         "context": [""]
-        },
-     {"tag": "supplier_info",
-         "patterns": ["What information is shared with supplier?"],
-         "responses": ["Production Schedule,Delivery Schedule,Proxy information about cost"],
-         "context": [""]
-        },
-     {"tag": "highest_grossing",
-         "patterns": ["What is the highest grossing product?"],
-         "responses": ["Laptop with touch sensors and 360 rotation"],
-         "context": [""]
-        },
-        {"tag": "connect_people",
-         "patterns": ["I want to meet the head of HR/IT/Projects department","I want to meet head IT Rakesh sharma."],
-         "responses": ["I will just check if he is available or on leave."],
-         "context": ["search_attendance_database_name_post"]
-        },
-        {"tag": "project_handling_queries",
-         "patterns": ["complaint has been raised for Insufficient Team Skills","Miscommunication Conflicts needs to be resolved","Risk Management issue has occured","skilled employees needed urgently"],
-         "responses": ["Please contact the project depatment"],
-         "context": [""]
-        },
-        {"tag": "solve_problems",
-         "patterns": ["Lack of product clarity","the specifications of product is not clear to customer. what should we do"],
-         "responses": ["Please enter product id and customer id.specifications shall be sent to user"],
-         "context": [""]
-        },
-         {"tag": "version_update",
-         "patterns": ["user needs the updated software version","user demands software updation"],
-         "responses": ["version updation request raised"],
-         "context": [""]
-          },
-        {"tag": "HR_related_problem",
-         "patterns": ["problem related to Job design and analysis","query based on Workforce planning","Training and development issues are to be handled","Compensation and benefits of the working employee","Legal issues of department like accidents in the company"],
-         "responses": ["Please Contact the HR team for this problem."],
-         "context": [""]
-        },
-    {"tag": "factors_impacting_sale",
-         "patterns": ["Impact on sale?","factors impacting sale this year?"],
-         "responses": ["elections will impact our sale this year","this year our sale might increase during durga puja","this year sale might be impacted due to demonitisation"],
-         "context": [""]
-        },
-    
-    {"tag": "predict_performance",
-         "patterns": ["how have we improved our sale from last year?","what is the profit this year?"],
-         "responses": ["we have improved our sale by increasing our customers upto 2 lakh","profit earned is 15%"],
-         "context": [""]
-        },
-         {"tag": "customer_satisfaction",
-         "patterns": ["how was the customer response","Is the customer happy?","what was the customer feedback?"],
-         "responses": ["Customer was happy and has given good rating"],
-         "context": [""]
-        },
-    {"tag": "maintainence",
-         "patterns": ["maintainence related queries recorded"],
-         "responses": ["lift is not working, projector misfuctioning"],
-         "context": [""]
-        },
-         {"tag": "gadgets",
-         "patterns": ["what are the gadgets in stock?","which products we have?"],
-         "responses": ["hardisk,pendrives, wireless bluetooth,Laptops,Gaming Accessories"],
-         "context": [""]
-        },
-    {"tag": "commission",
-         "patterns": ["what is the Commission rate?","Commission rate on each product?"],
-         "responses": ["Commission rate is 5% on laptops,25%on bluetooth device,10% on Desktop"],
-         "context": [""]
-        },
-    {"tag": "invalid",
-         "patterns": ["Marry me","I love You","date me","chat with me","I am bored"],
-         "responses": ["Please ask organisation related query."],
-         "context": [""]
-        },
-    {"tag": "noans",
-         "patterns": ["why","how","when","I","you"],
-         "responses": ["Can't Understand Your Question","please elaborate your question"],
-         "context": [""]
-        },
-    {"tag": "turnover",
-         "patterns": ["what is the turnover of the company at present?"],
-         "responses": ["10 Million Ton"],
-         "context": [""]
-        },
-        {"tag": "predict_delay",
-         "patterns": ["why is order 23A12 delayed"],
-         "responses": ["delay is due to manufacuring","Delay is due to inavailable components"],
-         "context": [""]
-        },
-    {"tag": "predict_delay",
-         "patterns": ["why is order 23A12 delayed"],
-         "responses": ["delay is due to manufacuring","Delay is due to inavailable components"],
-         "context": [""]
-        },
-        {"tag": "name",
-         "patterns": ["what is your name?","what should I call you?"],
-         "responses": ["I'm Bruno","Hey!I'm Bruno"],
-         "context": [""]
-        },
-         {"tag": "about",
-         "patterns": ["how you doing?","how are you"],
-         "responses": ["Thanks For Asking!How can I help you?"],
-         "context": [""]
-        },
-    {"tag":"configuration",
-     "patterns":["How to configure my laptop","software configuration of laptop","steps to configure laptop","How to configure my computer","software configuration of computer","steps to configure computer","How to configure my desktop","software configuration of desktop","steps to configure desktop"],
-     "responses":["search tab->control panel->select specific application->download update->give permission"],
-     "context":[""]
+{
+  "intents": [
+    {
+      "context": "",
+      "patterns": [ "Hello", "Hi there", "Good morning", "What's up" ],
+      "responses": [ "Hey!", "Hello", "Hi!", "Good morning!" ],
+      "tag": "hello"
     },
-      {"tag": "Weather",
-         "patterns": ["what is the weather today?"],
-         "responses": ["It's 36C according to accuweather"],
-         "context": [""]
-        },
-      {"tag": "leave",
-         "patterns": ["Is Michel Sharma on leave?","Is Siddhart Roy present today?","Is Shantanu Bhatt in office?"],
-         "responses": ["Give me a moment!I'll just check","yes","no"],
-         "context": [""]
-        },
-      {"tag": "hours",
-         "patterns": ["Opening hours of the cafeteria?","when does the cafeteria open","office canteen opening time"],
-         "responses": ["It is open from Monday-Saturday 9:00am-7:30pm"],
-         "context": [""]
-        },
-         {"tag": "cabin",
-         "patterns": ["where is VP cabin?","Where is Head IT cabin?","Where is AI department","Where is Project head department?","where is cafeteria","guide me to the canteen"],
-         "responses": ["Block-A 3rd floor 1st room","Block-B 2nd Floor","Block-D Ground Floor"],
-         "context": [""]
-        },
-    {"tag":"domain",
-        "patterns":["How to improve team members domain knowledge","improving domain knowledge of team members"],
-        "responses":["set up key meetings and workshop,create a shared drive for information,Hold informal sharing session"],
-        "context":[""]
+    {
+      "context": [ "" ],
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "tag": "noanswer"
+    },
+    {
+      "context": "",
+      "patterns": [ "What is your job", "What is your work" ],
+      "responses": [
+        "My job is to make you feel like everything is okay.",
+        "I work to serve you as well as possible"
+      ],
+      "tag": "job"
+    },
+    {
+      "context": "",
+      "patterns": [ "What is your age", "How old are you", "When were you born" ],
+      "responses": [ "I was born in 2021" ],
+      "tag": "age"
+    },
+    {
+      "context": "",
+      "patterns": [ "How are you today", "How are you" ],
+      "responses": [
+        "I am feeling good, you?",
+        "Very good and you?",
+        "Actually, I'm okay and you?"
+      ],
+      "tag": "feeling"
+    },
+    {
+      "context": "feeling",
+      "patterns": [
+        "I am good too",
+        "I feel fine",
+        "Good !",
+        "Fine",
+        "I am good",
+        "I am great",
+        "great"
+      ],
+      "responses": [ "That is perfect!", "So, everything's okay!" ],
+      "tag": "good"
+    },
+    {
+      "context": "feeling",
+      "patterns": [ "I am feeling bad", "No I am sad", "No" ],
+      "responses": [ "I hope you will feel better !" ],
+      "tag": "bad"
+    },
+    {
+      "context": "",
+      "patterns": [ "What can you do", "What can I ask you", "Can you help me" ],
+      "responses": [ "I can do a lot of things but here are some of my skills, you can ask me: the capital of a country, its currency and its area. A random number. To calculate a math operation." ],
+      "tag": "actions"
+    },
+    {
+      "context": "",
+      "patterns": [ "Are you a girl", "You are a women" ],
+      "responses": [ "Sure, I am a women" ],
+      "tag": "women"
+    },
+    {
+      "context": "",
+      "patterns": [ "Are you a men", "Are you a boy" ],
+      "responses": [ "No, I am a women" ],
+      "tag": "men"
+    },
+    {
+      "context": "",
+      "patterns": [ "Thank you", "Thank you very much", "thanks" ],
+      "responses": [ "I only do my job️", "No problem!" ],
+      "tag": "thanks"
+    },
+    {
+      "context": "",
+      "patterns": [ "Goodbye", "Good afternoon", "Bye" ],
+      "responses": [ "Goodbye!", "See you soon!" ],
+      "tag": "goodbye"
+    },
+    {
+      "context": "",
+      "patterns": [ "Where do you live" ],
+      "responses": [ "I live in a server located in the US!" ],
+      "tag": "city"
+    },
+    {
+      "context": "",
+      "patterns": [ "What are you doing" ],
+      "responses": [ "Actually, I'm chatting with somebody" ],
+      "tag": "action"
+    },
+    {
+      "context": "",
+      "patterns": [ "Can you wait 2 minutes", "Please wait", "Wait 2 secs please" ],
+      "responses": [ "Sure! I wait." ],
+      "tag": "wait"
+    },
+    {
+      "context": "",
+      "patterns": [ "Are you still there?", "Are you here?" ],
+      "responses": [ "Of course! Always at your service." ],
+      "tag": "still there"
     }
-   ]
+  ]
 }
